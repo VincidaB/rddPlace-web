@@ -4,7 +4,7 @@
   // to deploy, we should listen to the environment variable PORT
 
   // The host to proxy back end requests to (no protocol, no trailing slash)
-  proxyTo: 'localhost:45678',
+  proxyTo: 'rddplace-server-production.up.railway.app:45678',
 
   // Displayed on each page
   title: 'RDD pxls space',
