@@ -24,8 +24,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 const filesInDist = listFiles(path.join('dist')).map(file => file.replace('dist/', ''));
 
+
+console.log(process.env.PORT);
+
 const proxy = createProxyMiddleware({
-  target: 'http://' + config.proxyTo,
+  target: 'http://' + config.proxyTo + ':' + process.env.PORT,
   changeOrigin: true,
   selfHandleResponse: true,
   logLevel: 'error',
