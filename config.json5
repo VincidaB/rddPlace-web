@@ -1,6 +1,6 @@
 {
   // The port to listen on - MUST BE DIFFERENT from back end
-  port: 3000,
+  port: 80,
 
   // The host to proxy back end requests to (no protocol, no trailing slash)
   proxyTo: 'localhost:45678',
