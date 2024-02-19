@@ -130,7 +130,7 @@ async function sendErrorPage(req, res, code) {
   });
 }
 
-server.listen(config.port, () => {
+server.listen(process.env.PORT, () => {
   console.info(`Listening at http://localhost:${process.env.PORT}/`);
 
   const rl = readline.createInterface({
