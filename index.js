@@ -131,7 +131,7 @@ async function sendErrorPage(req, res, code) {
 }
 
 server.listen(config.port, () => {
-  console.info(`Listening at http://localhost:${config.port}/`);
+  console.info(`Listening at http://localhost:${process.env.PORT}/`);
 
   const rl = readline.createInterface({
     input: process.stdin,

@@ -1,6 +1,7 @@
 {
   // The port to listen on - MUST BE DIFFERENT from back end
-  port: 80,
+  //  port: 80, 
+  // to deploy, we should listen to the environment variable PORT
 
   // The host to proxy back end requests to (no protocol, no trailing slash)
   proxyTo: 'localhost:45678',
