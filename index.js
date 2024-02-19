@@ -25,10 +25,10 @@ app.set('views', path.join(__dirname, 'views'));
 const filesInDist = listFiles(path.join('dist')).map(file => file.replace('dist/', ''));
 
 
-console.log(process.env.PORT);
+console.log('Server port is SERVER_PORT = ' + process.env.SERVER_PORT);
 
 const proxy = createProxyMiddleware({
-  target: 'http://' + config.proxyTo + ':' + process.env.PORT,
+  target: 'http://' + config.proxyTo + ':' + process.env.SERVER_PORT,
   changeOrigin: true,
   selfHandleResponse: true,
   logLevel: 'error',
